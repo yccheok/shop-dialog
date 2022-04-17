@@ -93,9 +93,9 @@ extension ViewController: UICollectionViewDataSource {
         collectionViewCell._description.text = shop.description
         
         if isExpanded[indexPath.item] {
-            collectionViewCell._description.isHidden = false
+            collectionViewCell.innerView.isHidden = false
         } else {
-            collectionViewCell._description.isHidden = true
+            collectionViewCell.innerView.isHidden = true
         }
         
         return collectionViewCell
@@ -115,7 +115,7 @@ extension ViewController: UICollectionViewDelegate {
                 isExpanded[i] = false
             }
             if let c = collectionView.cellForItem(at: IndexPath(item: i, section: 0)) as? CollectionViewCell {
-                c._description.isHidden = !isExpanded[i]
+                c.innerView.isHidden = !isExpanded[i]
             }
         }
         collectionView.performBatchUpdates(nil, completion: nil)

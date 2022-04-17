@@ -13,6 +13,8 @@ class CollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var _description: UILabel!
     
+    @IBOutlet weak var innerView: UIView!
+    
     static func getUINib() -> UINib {
         return UINib(nibName: String(describing: self), bundle: nil)
     }
