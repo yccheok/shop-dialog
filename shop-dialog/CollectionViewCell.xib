@@ -42,7 +42,7 @@
                                     <constraint firstItem="xjt-AJ-lfz" firstAttribute="width" secondItem="wRt-dm-Ni5" secondAttribute="width" multiplier="0.6" id="Ejf-il-Jh4"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6r-tW-hBB">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6r-tW-hBB">
                                 <rect key="frame" x="0.0" y="20.5" width="438" height="39.5"/>
                                 <color key="backgroundColor" red="0.95686274510000002" green="0.56078431370000004" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
