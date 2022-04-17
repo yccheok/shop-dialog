@@ -84,6 +84,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <color key="backgroundColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </stackView>
                 </subviews>
             </view>
@@ -93,7 +94,7 @@
                 <constraint firstItem="dcY-aq-lKP" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="A6o-eB-QcN"/>
                 <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="dcY-aq-lKP" secondAttribute="trailing" id="fW1-j3-h6Z"/>
                 <constraint firstItem="ZTg-uK-7eu" firstAttribute="top" secondItem="dcY-aq-lKP" secondAttribute="top" id="n5N-n5-0ky"/>
-                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="dcY-aq-lKP" secondAttribute="bottom" id="xtt-39-4nn"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="dcY-aq-lKP" secondAttribute="bottom" priority="250" id="xtt-39-4nn"/>
             </constraints>
             <size key="customSize" width="438" height="169"/>
             <connections>
