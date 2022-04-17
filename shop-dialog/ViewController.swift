@@ -106,26 +106,19 @@ extension ViewController: UICollectionViewDataSource {
 extension ViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        var indexPaths = [IndexPath]()
-        
         for i in (0..<isExpanded.count) {
-            if isExpanded[i] != false {
+            if i == indexPath.item {
+                // ensure always visible
+                isExpanded[i] = true
+            } else {
+                // set all other rows to false
                 isExpanded[i] = false
-                
-                indexPaths.append(IndexPath(item: i, section: 0))
+            }
+            if let c = collectionView.cellForItem(at: IndexPath(item: i, section: 0)) as? CollectionViewCell {
+                c._description.isHidden = !isExpanded[i]
             }
         }
-        
-        if isExpanded[indexPath.item] != true {
-            isExpanded[indexPath.item] = true
-            
-            indexPaths.append(IndexPath(item: indexPath.item, section: 0))
-        }
-        
-        collectionView.performBatchUpdates({}) { _ in
-            collectionView.reloadItems(at: indexPaths)
-            collectionView.layoutIfNeeded()
-        }
+        collectionView.performBatchUpdates(nil, completion: nil)
     }
 }
 
